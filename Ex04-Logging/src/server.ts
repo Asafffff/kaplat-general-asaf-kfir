@@ -227,6 +227,6 @@ app.put('/logs/level', (req, res) => {
   return res.status(200).send(loggerLevel.toLocaleUpperCase());
 });
 
-app.listen(9583, () => {
-  todoLogger.info('Server listening on port 9583...');
+app.listen(9285, () => {
+  todoLogger.info('Server listening on port 9285...');
 });
