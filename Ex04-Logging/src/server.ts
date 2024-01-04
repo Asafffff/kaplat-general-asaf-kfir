@@ -81,7 +81,7 @@ app.post('/todo', (req, res) => {
     dueDate,
   });
 
-  return res.status(201).send({ result: todoArray.length });
+  return res.status(200).send({ result: todoArray.length });
 });
 
 app.get('/todo/size', (req, res) => {
@@ -147,7 +147,7 @@ app.put('/todo', (req, res) => {
 
   todoLogger.debug(`Todo id [${id}] state change: ${oldStatus} --> ${status}`);
 
-  return res.status(201).send({ result: oldStatus });
+  return res.status(200).send({ result: oldStatus });
 });
 
 app.delete('/todo', (req, res) => {
